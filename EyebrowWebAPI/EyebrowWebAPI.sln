@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eyebrow.Service", "Eyebrow.Service\Eyebrow.Service.csproj", "{1AA79E1F-486A-4660-A572-7C432CF9D93B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eyebrow.Repository", "Eyebrow.Repository\Eyebrow.Repository.csproj", "{581D7B4B-7F71-4626-A6DF-D8C8406966D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eyebrow.Common", "Eyebrow.Common\Eyebrow.Common.csproj", "{307E3A2F-CA41-4938-98C3-10D95FA37427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eyebrow.API", "Eyebrow.API\Eyebrow.API.csproj", "{8E5E4774-123D-4CC5-BD86-998952C1914B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AA79E1F-486A-4660-A572-7C432CF9D93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA79E1F-486A-4660-A572-7C432CF9D93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA79E1F-486A-4660-A572-7C432CF9D93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA79E1F-486A-4660-A572-7C432CF9D93B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{581D7B4B-7F71-4626-A6DF-D8C8406966D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{581D7B4B-7F71-4626-A6DF-D8C8406966D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{581D7B4B-7F71-4626-A6DF-D8C8406966D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{581D7B4B-7F71-4626-A6DF-D8C8406966D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{307E3A2F-CA41-4938-98C3-10D95FA37427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307E3A2F-CA41-4938-98C3-10D95FA37427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307E3A2F-CA41-4938-98C3-10D95FA37427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307E3A2F-CA41-4938-98C3-10D95FA37427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E5E4774-123D-4CC5-BD86-998952C1914B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5E4774-123D-4CC5-BD86-998952C1914B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5E4774-123D-4CC5-BD86-998952C1914B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5E4774-123D-4CC5-BD86-998952C1914B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3BD4C5F-FB01-41C4-9BCD-561B4599C3EA}
+	EndGlobalSection
+EndGlobal
