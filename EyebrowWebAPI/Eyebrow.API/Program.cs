@@ -1,4 +1,9 @@
 using Microsoft.OpenApi.Models;
+using Eyebrow.Repository;
+using Microsoft.EntityFrameworkCore;
+using Eyebrow.Service.Interface;
+using Eyebrow.Service;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +32,12 @@ builder.Services.AddSwaggerGen(options =>
 });
 // AutoMapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+// MySQL EF Core
+builder.Services.AddDbContext<DataContext>((option) =>{
+    var connectionString = builder.Configuration.GetConnectionString("Eyebrow_DataBase");
+    option.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString));
+});
+builder.Services.AddScoped<IAnnouncement,AnnouncementService>();
 
 var app = builder.Build();
 

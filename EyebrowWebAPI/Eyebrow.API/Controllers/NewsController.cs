@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Eyebrow.Service.Interface;
+using Eyebrow.Repository.Entites;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,16 +12,18 @@ namespace Eyebrow.API.Controllers
     public class NewsController : ControllerBase
     {
         private readonly IMapper mapper;
+        private readonly IAnnouncement _announcement;
 
-        public NewsController(IMapper mapper) 
+        public NewsController(IMapper mapper,IAnnouncement announcement) 
         {
             this.mapper = mapper;
+            this._announcement = announcement;
         }
         // GET: api/<NewsController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Announcement> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _announcement.GetAnnouncements();
         }
 
         // GET api/<NewsController>/5
@@ -31,8 +35,9 @@ namespace Eyebrow.API.Controllers
 
         // POST api/<NewsController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Announcement value)
         {
+            _announcement.CreateAnnouncements(value);
         }
 
         // PUT api/<NewsController>/5

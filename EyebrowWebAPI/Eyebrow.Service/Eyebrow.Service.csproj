@@ -13,6 +13,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Eyebrow.Common\Eyebrow.Common.csproj" />
+      <ProjectReference Include="..\Eyebrow.Repository\Eyebrow.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
   </ItemGroup>
 
 </Project>

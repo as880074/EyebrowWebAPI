@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.5" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
@@ -21,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Eyebrow.Common\Eyebrow.Common.csproj" />
     <ProjectReference Include="..\Eyebrow.Service\Eyebrow.Service.csproj" />
+    <ProjectReference Include="..\Eyebrow.Repository\Eyebrow.Repository.csproj" />
   </ItemGroup>
 
 </Project>
