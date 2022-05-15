@@ -1,14 +1,5 @@
 create database Eyebrow;
 
-create table Announcement
-(
-	Id int auto_increment primary key,
-    Title varchar(255),
-    Content varchar(1500),
-    Statu bool,
-    Create_Time datetime
-);
-
 create table Sys_Setting
 (
     Id int auto_increment primary key,
@@ -26,4 +17,54 @@ create table Sys_Code
     SC_Code varchar(255),
     SC_Desc varchar(255),
     SC_Order int
+);
+
+create table Announcement
+(
+	Id int auto_increment primary key,
+    Title varchar(255),
+    Content longtext,
+    Statu bool,
+    Shelf_Time date,
+    Create_Time date
+);
+
+create table Banner
+(
+	Id int auto_increment primary key,
+    ImagePath varchar(512),
+    Url varchar(512),
+    Statu bool,
+    Orders int
+);
+
+create table Reserve
+(
+	Id int auto_increment primary key,
+    ReserveName varchar(16),
+    Phone varchar(16),
+    Category_Id varchar(3),
+    SubCategory_Id varchar(3),
+    Appointment date,
+	Period bit
+);
+
+create table SubCategory
+(
+	Id int auto_increment primary key,
+    CategoryId varchar(3),
+    SubCategory_Name varchar(255),
+    Price int,
+    Orders int
+);
+
+create table Portfolio
+(
+	Id int auto_increment primary key,
+	Portfolio_Name varchar(255),
+    Before_Path varchar(512),
+    After_Path varchar(512),
+    SubCategory_Id int,
+    Orders int,
+    Statu bool
 );
