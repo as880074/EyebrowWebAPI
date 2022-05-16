@@ -39,6 +39,7 @@ builder.Services.AddDbContext<DataContext>((option) =>{
 });
 builder.Services.AddScoped<IAnnouncement,AnnouncementService>();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

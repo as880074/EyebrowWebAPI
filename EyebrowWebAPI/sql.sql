@@ -26,7 +26,8 @@ create table Announcement
     Content longtext,
     Statu bool,
     Shelf_Time date,
-    Create_Time date
+    Create_Time date,
+    IsTop bool
 );
 
 create table Banner
@@ -35,7 +36,7 @@ create table Banner
     ImagePath varchar(512),
     Url varchar(512),
     Statu bool,
-    Orders int
+    Banner_Order int
 );
 
 create table Reserve
@@ -55,7 +56,7 @@ create table SubCategory
     CategoryId varchar(3),
     SubCategory_Name varchar(255),
     Price int,
-    Orders int
+    SubCategory_Order int
 );
 
 create table Portfolio
@@ -65,6 +66,6 @@ create table Portfolio
     Before_Path varchar(512),
     After_Path varchar(512),
     SubCategory_Id int,
-    Orders int,
+    Portfolio_Order int,
     Statu bool
 );
