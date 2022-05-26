@@ -7,7 +7,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["Eyebrow.API/Eyebrow.API.csproj", "Eyebrow.API/"]
+COPY ["Eyebrow.API.csproj", "Eyebrow.API/"]
 RUN dotnet restore "Eyebrow.API/Eyebrow.API.csproj"
 COPY . .
 WORKDIR "/src/Eyebrow.API"
