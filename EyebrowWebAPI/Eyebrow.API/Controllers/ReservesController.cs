@@ -15,9 +15,9 @@ namespace Eyebrow.API.Controllers
         {
             var result = new List<CalendarViewModel>() 
             {
-                new CalendarViewModel(){Appointment=DateTime.Now,Period="AM",Status="預約" },
-                new CalendarViewModel(){Appointment=DateTime.Now,Period="PM",Status="預約" },
-                new CalendarViewModel(){Appointment=DateTime.Now.AddDays(1),Period="ALL",Status="休息" },
+                //new CalendarViewModel(){Appointment=DateTime.Now,Period="AM",Status="預約" },
+                //new CalendarViewModel(){Appointment=DateTime.Now,Period="PM",Status="預約" },
+                //new CalendarViewModel(){Appointment=DateTime.Now.AddDays(1),Period="ALL",Status="休息" },
             };
             return Ok(result);
         }

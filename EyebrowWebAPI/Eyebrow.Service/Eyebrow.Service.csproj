@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Models\Dtos\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Eyebrow.Common\Eyebrow.Common.csproj" />
       <ProjectReference Include="..\Eyebrow.Repository\Eyebrow.Repository.csproj" />
   </ItemGroup>

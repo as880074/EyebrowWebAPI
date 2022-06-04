@@ -1,7 +1,5 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Eyebrow.Service.Interface;
-using Eyebrow.Repository.Entites;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,44 +10,42 @@ namespace Eyebrow.API.Controllers
     public class NewsController : ControllerBase
     {
         private readonly IMapper mapper;
-        private readonly IAnnouncement _announcement;
 
-        public NewsController(IMapper mapper,IAnnouncement announcement) 
+        public NewsController(IMapper mapper) 
         {
             this.mapper = mapper;
-            this._announcement = announcement;
         }
-        // GET: api/<NewsController>
-        [HttpGet]
-        public IEnumerable<Announcement> Get()
-        {
-            return _announcement.GetAnnouncements();
-        }
+        //// GET: api/<NewsController>
+        //[HttpGet]
+        //public IEnumerable<Announcement> Get()
+        //{
+        //    return _announcement.GetAnnouncements();
+        //}
 
-        // GET api/<NewsController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //// GET api/<NewsController>/5
+        //[HttpGet("{id}")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
-        // POST api/<NewsController>
-        [HttpPost]
-        public void Post([FromBody] Announcement value)
-        {
-            _announcement.CreateAnnouncements(value);
-        }
+        //// POST api/<NewsController>
+        //[HttpPost]
+        //public void Post([FromBody] Announcement value)
+        //{
+        //    _announcement.CreateAnnouncements(value);
+        //}
 
-        // PUT api/<NewsController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+        //// PUT api/<NewsController>/5
+        //[HttpPut("{id}")]
+        //public void Put(int id, [FromBody] string value)
+        //{
+        //}
 
-        // DELETE api/<NewsController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //// DELETE api/<NewsController>/5
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 }

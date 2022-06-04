@@ -1,9 +1,10 @@
-﻿namespace Eyebrow.API.Models
+﻿using Eyebrow.Common.Models;
+
+namespace Eyebrow.API.Models
 {
     public class CalendarViewModel
     {
         public DateTime Appointment { get; set; }
-        public string Period { get; set; }
-        public string Status { get; set; }
+        public IEnumerable<CalendarDto> Calendars { get; set; }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Eyebrow.Repository.Models;
+using Eyebrow.Service.Models.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +13,7 @@ namespace Eyebrow.Service.Infrastructure.Mapping
     {
         public ServiceProfile()
         {
-    
+            this.CreateMap<Banner, BannerDto>();
         }
     }
 }
